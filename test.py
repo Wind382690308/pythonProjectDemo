@@ -1,6 +1,6 @@
 # Filename : test.py
 # coding=utf-8
-
+__author__ = 'wind'
 
 print ('hello world')
 
@@ -51,3 +51,98 @@ print  5|3
 print  5^3
 # 按位翻转
 # not 布尔非  and 布尔与
+
+def foo():
+    print 'foo click'
+
+
+#foo()
+
+#动态语言#
+a = 5
+
+print a
+
+def foo():
+    a = 10
+    if(a>10):
+        print 'hellp more than 10'
+    elif 5<a<10 :
+
+        print "hello less than 10"
+    else:
+        print 'equal'
+
+foo()
+
+arr = [1,2,3,4]
+
+#循环 迭代器
+for i in range(10) :
+    print  i
+
+#def  函数 申明符
+def sum (a,b):
+    return a+b
+
+print sum(10,2)
+
+
+#lambda   匿名 函数
+aa = lambda x,y:x+y
+
+print  aa(3,3)
+
+print 'abcd ' + 'efgh'
+
+# class 类
+
+class footall(object):
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def say(self):
+        print  self.name
+        print  self.age
+
+fo = footall('laowu',12)
+
+fo.say()
+
+#内建函数  不需要import 的 或者对象   如input ,,raw_input
+
+# s = raw_input('请输入年龄')
+#
+# print ('输入的年龄为'+s)
+
+#input  只能接收python 表达式即你输入字符串的时候必须使用引号将它括起来
+s = input('请输入一个任意的东西')
+
+print ('任意的东西 为 '+s)
+
+#文件 io 操作  file  open
+#file 是一个类型 类似于int ,dict 可以直接实例对象。
+#open 是一个内建函数 作用是根据参数来生成一个file 类型并返回 推荐使用open。
+
+# f = open('test.py','r')
+#
+# for i in f:
+#     print i
+#
+# f.close()
+
+
+#map rediucs os
+
+
+#d对象属性检查
+#isinstance() 检查对象的类型
+#hassattr() 判断对象是否有某个属性
+#type() 查看对象的类型
+#id() 获取对象的内存位置
+
+
+ssss = 12
+
+if (ssss.isinstance(int)):
+    print ('sss is int')
