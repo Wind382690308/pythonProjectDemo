@@ -147,3 +147,7 @@ ssss = 12
 
 if (ssss.isinstance(int)):
     print ('sss is int')
+
+
+print('master')
+
